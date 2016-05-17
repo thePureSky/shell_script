@@ -1,0 +1,55 @@
+#!/bin/bash
+
+testuser=hadoop
+
+if [ $USER != $testuser ]
+then
+	echo "This is not $testuser"
+else
+	echo "Welcome $testuser"
+fi
+
+var1=baseball
+var2=hockey
+
+if [ $var1 \> $var2 ]
+then
+	echo "$var1 is greater than $var2"
+else
+	echo "$var1 is less than $var2"
+fi
+
+#different from sort with the order
+var3=testing
+var4=Testing
+
+if [ $var3 \> $var4 ]
+then
+	echo "$var3 is greater than $var4"
+else
+	echo "$var3 is less than $var4"
+fi
+
+var5=testing
+var6=''
+
+if [ -n "$var5" ]
+then
+	echo "The string '$var5' is not empty"
+else
+	echo "The string '$var5' is empty"
+fi
+
+if [ -z "$var6" ]
+then
+	echo "The string '$var6' is empty"
+else
+	echo "The string '$var6' is not empty"
+fi
+
+if [ -z "$var7" ]
+then 
+	echo "The string '$var7' is empty"
+else
+	echo "The string '$var7' is not empty"
+fi

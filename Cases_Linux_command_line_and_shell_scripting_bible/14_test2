@@ -1,0 +1,12 @@
+#!/bin/bash
+# redirecting output to different locations
+
+exec 2>14_test2_error
+
+echo "This is the start of the script"
+echo "Now redirecting all output to another location"
+
+exec 1>14_test2_out
+
+echo "This is the start of the script"
+echo "But this should go to the testerror file" >&2

@@ -1,0 +1,15 @@
+#!/bin/bash
+# testing the shift
+
+count =1
+echo "\$@: $@"
+
+shift 2
+
+while [ -n "$1" ]
+do
+	echo "Parameter #$count = $1"
+	count=$[ $count + 1 ]
+	shift
+done
+

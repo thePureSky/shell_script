@@ -1,0 +1,9 @@
+#!/bin/bash
+# testing the $# variable
+
+echo "The number of parameters is $#"
+params=$#
+echo the last parameter is $params
+echo the last parameter is ${!#}
+
+

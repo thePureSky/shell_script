@@ -1,0 +1,24 @@
+#!/bin/bash
+# using numeric test comparisions
+
+var1=10
+var2=11
+
+if [ $var1 -gt 5 ]
+then
+	echo "The test value $var1 is greater than 5"
+fi
+
+if [ $var1 -eq $var2 ]
+then
+	echo "the values are equal"
+else
+	echo "the values are different"
+fi
+
+var3=`echo "scale=4; 10/3" | bc`
+echo "The test value is $var3"
+if [ $var3 -gt 3 ]
+then 
+	echo "The result is larger than 3"
+fi

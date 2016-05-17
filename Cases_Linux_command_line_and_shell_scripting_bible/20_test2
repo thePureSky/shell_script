@@ -1,0 +1,8 @@
+#!/bin/bash
+number=123123513425344531451345
+result=`echo $number | sed '{
+:start
+s/\(.*[0-9]\)\([0-9]\{3\}\)/\1,\2/
+t start 
+}'`
+echo "The result is $result"

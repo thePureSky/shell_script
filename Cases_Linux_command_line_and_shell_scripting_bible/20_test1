@@ -1,0 +1,4 @@
+#!/bin/bash
+# reverse the text of the file
+
+sed -n '{1!G;h;$p}' test

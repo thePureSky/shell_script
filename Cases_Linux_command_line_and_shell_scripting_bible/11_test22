@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# testing compound comparisons
+
+if [ -d $HOME ] && [ -w $HOME/testing ]
+then
+	echo "1 The file exists and you can write to it"
+else
+	echo "1 I cannot write to the file"
+fi
+
+
+if [ -d $HOME ] || [ -w $HOME/testing ]
+then
+	echo "2 The file exists or you can write to it"
+else
+	echo "2 I cannot write to the file"
+fi

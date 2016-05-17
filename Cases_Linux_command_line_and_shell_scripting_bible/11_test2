@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# testing the if statement
+if date
+then
+	echo "It worked!"
+fi
+
+#testing the bad command
+if asdfsd
+then
+	echo "It did not work"
+fi
+echo "We are outside of the if statement"
+
+exit 100
+

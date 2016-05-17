@@ -1,0 +1,9 @@
+#!/bin/bash
+# testing lsof with file descriptors
+
+exec 3> 14_test18_out1
+exec 6> 14_test18_out2
+exec 7< test
+
+lsof -a -p $$ -d 0,1,2,3,6,7
+
